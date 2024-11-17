@@ -17,7 +17,7 @@ while True:
     last_price = [tickers.tickers[symbol.upper()].history(period='1d')['Close'][0] for symbol in symbols]
     print(datetime.now())
     print(last_price)
-    time.sleep(2)
+    time.sleep(4)
     for i in range (len(symbols)):
         if last_price[i] > upper_limits[i]:
             #alerta de venda
